@@ -1,40 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 import React from "react";
+import Header from "./Components/Header"
 import Home from './Pages/Home'
 import Company from './Pages/Company'
 import Recruiting from './Pages/Recruiting'
 import Engineering from './Pages/Engineering'
 import Projects from './Pages/Projects'
+import ExternalITDepartment from './Pages/ExternalITDepartment'
+import SoftwareDevelopment from './Pages/SoftwareDevelopment'
+import ECommerceShop from './Pages/ECommerceShop'
 
+import RPA from './Pages/RPA'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from "react-router-dom";
 
 export default function App() {
   return (
     <Router>
+      <Header />
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/engineering">Engineering</Link>
-          </li>
-          <li>
-            <Link to="/recruiting">Recruiting</Link>
-          </li>
-          <li>
-            <Link to="/company">Company</Link>
-          </li>
-        </ul>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -46,16 +33,39 @@ export default function App() {
             <Recruiting />
           </Route>
           <Route path="/engineering">
-            <Engineering />
+            <Engineering />        
           </Route>
+          <Route exact path="/engineering/externalITDepartment">
+            <ExternalITDepartment/>
+          </Route>
+          <Route path="/engineering/software">
+            <SoftwareDevelopment/>
+          </Route>   
+          <Route path="/engineering/ecommerce">
+            <ECommerceShop/>
+          </Route> 
+          <Route path="/engineering/it">
+            <RPA />
+          </Route> 
+          <Route path="/rpa">
+            <RPA /> 
+           </Route> 
           <Route path="/company">
             <Company />
           </Route>
+  
         </Switch>
-         
 
       </div>
     </Router>
   )
 }
 
+// External IT Department
+
+// Software Development
+
+// eCommerce Shop
+// Implementation
+
+// RPA and AI

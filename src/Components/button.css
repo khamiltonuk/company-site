@@ -1,0 +1,10 @@
+.button-primary {
+    border: 2px solid #ff0000;
+    border-radius: 100px;
+    background: transparent;
+    color: #ff0000;
+    height: 36px;
+    padding: 5px 20px;
+    font-family: inherit;
+    font-weight: 600;
+}
