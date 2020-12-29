@@ -2,7 +2,7 @@ import './App.css';
 import React from "react";
 import Header from "./Components/Header"
 import Home from './Pages/Home'
-import Company from './Pages/Company'
+import Company from './Pages/Home/Company'
 import Recruiting from './Pages/Recruiting'
 import Engineering from './Pages/Engineering'
 import Projects from './Pages/Projects'
@@ -60,12 +60,3 @@ export default function App() {
     </Router>
   )
 }
-
-// External IT Department
-
-// Software Development
-
-// eCommerce Shop
-// Implementation
-
-// RPA and AI

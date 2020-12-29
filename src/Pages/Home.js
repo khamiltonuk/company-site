@@ -4,6 +4,13 @@ import softwareeng from "../Assets/softwareeng.png"
 import trolley from "../Assets/trolley.png"
 import introImg from "../Assets/introImg.png"
 import "./home.css"
+import Projects from "./Projects"
+import Engineering from './Engineering'
+import Recruiting from './Recruiting'
+import ECommerceShop from './ECommerceShop'
+import Testimonials from './Testimonials'
+// import ExtrenalITDepartment from './ ExtrenalITDepartment'
+
 
 function Home() {
   return (
@@ -19,28 +26,33 @@ function Home() {
       </div>
 
       <div className="brand">
- 
-       <img src={brands} alt="" />
+
+        <img src={brands} alt="" />
       </div>
 
       <ul className="services">
         <li>
-            <img src={softwareeng} alt="" />
+          <img src={softwareeng} alt="" />
           <p>Software Engineering</p>
         </li>
         <li>
-            <img src={smiley} alt="" />
+          <img src={smiley} alt="" />
           <p>IT Recruitment</p>
         </li>
         <li>
-            <img src={trolley} alt="" />
+          <img src={trolley} alt="" />
           <p>Shopify</p>
         </li>
       </ul>
+      <Projects />
+      <Engineering />
+      <Recruiting />
+      <ECommerceShop />
+      <Testimonials />
     </div>
-  
-  );
+
+  )
 }
-    
-    
+
+
 export default Home;
