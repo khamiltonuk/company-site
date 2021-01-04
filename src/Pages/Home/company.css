@@ -1,0 +1,22 @@
+.chunk {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    .chunk {
+        flex-direction: row;
+    }
+}
+
+.list {
+   background: blue;   
+}
+
+.img-max {
+    min-width: 100%;
+}
+
+.team {
+
+}
